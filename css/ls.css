@@ -440,7 +440,7 @@ header#navtop {
 header nav ul {
 	float: left;
 	overflow: hidden;
-	padding: 0 3em 0 2em;
+	padding: 0 2em;
 	border-left: 1px solid #ddd;
 	line-height: 2em;
 }
@@ -495,7 +495,6 @@ footer a
 	color: #999;
 	font-weight: 500;
 }
-
 footer a:hover { text-decoration: none; }
 footer a img:hover {
 	opacity: 0.4;
@@ -513,30 +512,30 @@ footer li:last-child {
 	border-right: none;
 }
 .top-of-page {
-    text-align: center;
+	text-align: center;
 }
 .top-button { /* Button Styling */
-    display: inline-block;
-    color: #4e7b94;
-    font-size: 1.2em;
-    padding: .2em;
-    border: none;
+	display: inline-block;
+	color: #4e7b94;
+	font-size: 1.2em;
+	padding: .2em;
+	border: none;
 }
 .top-button::before {
-    content: "\2191";
-    font-family: system-ui, -apple-system, sans-serif;
-    display: inline-block;
+	content: "\2191";
+	font-family: system-ui, -apple-system, sans-serif;
+	display: inline-block;
 }
 /* desktop / mouse hover only */
 @media (hover: hover) and (pointer: fine) {
 .top-button:hover {
-    color: #fff;
-    background: #aeaeae;
+	color: #fff;
+	background: #aeaeae;
 }
 }
 .top-button:active {
-    position: relative;
-    top: 2px;
+	position: relative;
+	top: 2px;
 }
 /* -- HOME-PAGE
 ------------------------------------------------------------- */
@@ -570,23 +569,23 @@ iframe {border:none;}
 }
 .works figure .zoom,
 .works figure .play {
-  position: absolute;
-  top: 10px; left: 0;
-  width: 100%; height: 100%;
-  opacity: 0;
-  z-index: 2;              /* ← add this */
-  background-repeat: no-repeat;
-  background-position: center;
-  /* optional: control icon size */
-  /* background-size: 48px 48px; */
+	position: absolute;
+	top: 10px; left: 0;
+	width: 100%; height: 100%;
+	opacity: 0;
+	z-index: 2;              /* ← add this */
+	background-repeat: no-repeat;
+	background-position: center;
+	/* optional: control icon size */
+	/* background-size: 48px 48px; */
 }
 
 .works figure .zoom {
-    background: url(../img/zoom.png) no-repeat center;
+	background: url(../img/zoom.png) no-repeat center;
 }
 
 .works figure .play {
-    background: url(../img/play.png) no-repeat center;
+	background: url(../img/play.png) no-repeat center;
 }
 .works figure figcaption {
 	margin-top: 0.1em;
@@ -618,7 +617,6 @@ iframe {border:none;}
 .main aside menu .buttonactive {
 	color: #0078CF
 }
-
 
 /* -- SUBPAGES 
 ------------------------------------------------------------- */
@@ -714,12 +712,8 @@ width: 25%;
  .mq1-col-three-quarters {
 width: 75%;
 }
-	/**/
-	h1 {
+ h1 {
 font-size: 3.1em;
-}
- .slide figcaption {
-width: 80%;
 }
  footer li {
 float: left;
@@ -728,47 +722,31 @@ padding-right: 0.5em;
 border-right: 1px solid #DDD;
 }
 }
-    
 /* -- Media query 2 (mq2)
 ------------------------------------------------------------- */
 @media only screen and (max-width: 48em) { /* 16 / 768 */
- .mq2-col-full {
-width: 100%;
-}
- .mq2-col-one-half {
-width: 50%;
-}
- .mq2-col-one-third {
-width: 33.333%;
-}
- .mq2-col-two-thirds {
-width: 66.666%;
-}
- .mq2-col-one-quarter {
-width: 25%;
-}
- .mq2-col-three-quarters {
-width: 75%;
-}
-	/**/
-	header nav {
-width: 100%;
-}
- header nav ul {
-padding: 0;
-border-left:none;
-line-height: 2em;
-}
- header nav ul li {
-float: left;
-padding: 0 1em;
-border-left:1px solid #ddd;
-}
- .slider {
-margin-top: 3em;
-}
-}
-    
+	.mq2-col-full { width: 100%; }
+	.mq2-col-one-half { width: 50%; }
+	.mq2-col-one-third { width: 33.333%; }
+	.mq2-col-two-thirds { width: 66.666%; }
+	.mq2-col-one-quarter { width: 25%; }
+	.mq2-col-three-quarters { width: 75%; }
+
+	header nav { 
+	width: 100%; 
+	}
+	header nav ul {
+	padding: 0;
+	border-left:none;
+	line-height: 2em;
+	}
+	header nav ul li {
+	float: left;
+	padding: 0 1em;
+	border-left:1px solid #ddd;
+	}
+	footer ul {line-height: 1.7em;}
+ }
 /* -- Media query 3 (mq3)
 ------------------------------------------------------------- */
 @media only screen and (max-width: 30em) {	/* 16 / 480 */
@@ -791,19 +769,17 @@ margin-top: 3em;
 	.mobile
 	{
 		letter-spacing: .05em;
-		font-weight: 900;
-		font-size: 1.3em;
-		line-height: 1.7em;
-	}
-	
+		font-weight: 700;
+		font-size: 1.2em;
+		line-height: 1.8em;
+	}	
 	footer img
 	{
 		height:3em;
 		margin-top: 1em;
 		margin-bottom: 1.5em;
 		padding-left: 2em;
-	}
-	
+	}	
 	footer li
 	{
 		float: none;
@@ -813,11 +789,101 @@ margin-top: 3em;
 		border-right: none;
 		line-height: 2.5em;
 	}
-	
+	.top-button {
+		font-size: 1.5em;
+	}
 	.services article { margin-top: 3em; }
 	.services article:first-of-type { margin-top: 0; }
 }
+/* ======================================================
+   DARK MODE (system preference)
+   ====================================================== */
+@media (prefers-color-scheme: dark) {
 
+  html,
+  body {
+    background: #0f1113;
+    color: #cfcfcf;
+  }
+  a {
+    color: #558fce;
+  }
+  a:hover {
+    color: #ffffff;
+    background: rgba(255,255,255,0.02);
+  }
+  h1,
+  h1 a {
+    color: #9c9c9c;
+  }
+  h1 a:hover {
+    color: #ddd;
+    text-decoration: none;
+  }
+  header nav h4 {
+    color: #a8acb0;
+  }
+  header nav a {
+    color: #a8acb0;
+  }
+  header nav a:hover {
+    color: #ffffff;
+    background: rgba(255,255,255,0.04);
+  }
+  header nav ul {
+    border-left-color: rgba(255, 255, 255, 0.3);
+  }
+  .works figure > a {
+    border-top-color: rgba(255, 255, 255, 0.12);
+  }
+  .works figure figcaption {
+    color: #a8acb0;
+  }
+  hr,
+  .divide-top {
+    border-top-color: rgba(255,255,255,0.12);
+  }
+  footer {
+    color: #9aa0a6;
+  }
+  footer img {
+    filter: invert(.9) brightness(0.6);
+  }
+  footer li {
+    border-right-color: rgba(255, 255, 255, 0.3);
+  }
+  .tabs {
+    border-bottom-color: rgba(255, 255, 255, 0.12);
+  }
+  .tabs li a {
+    background: rgba(255, 255, 255, 0.04);
+    color: #cfcfcf;
+  }
+  .tabs li a:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.08);
+  }
+  .tabs li.active a {
+    background: #0f1113; /* same as page background */
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.18);
+    border-bottom-color: #0f1113; /* visually connects to content */
+  }
+  .tab_container {
+    border-left-color: rgba(255, 255, 255, 0.12);
+  }
+}
+@media (prefers-color-scheme: dark) and (hover: hover) and (pointer: fine) {
+  .top-button:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.08);
+  }
+}
+@media (prefers-color-scheme: dark) and (max-width: 48em) {
+  header nav ul li {
+    border-left-color: rgba(255, 255, 255, 0.3);
+  }
+}
 /* -- PRINT STYLES 
 ------------------------------------------------------------- */
 @media print {

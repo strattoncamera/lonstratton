@@ -618,8 +618,6 @@ border-left:1px solid #ddd;
 		line-height: 2.5em;
 	}
 }
-@media (prefers-color-scheme: dark) {
-}
 /* ======================================================
    DARK MODE (system preference)
    ====================================================== */
